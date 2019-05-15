@@ -1,0 +1,96 @@
+
+body{
+	font-family: "Arial",sans-serif;	
+	background-color: rgb(118, 121, 226);
+}
+
+header{
+
+	color: white;
+	margin: 20px 150px;
+}
+
+.logo{
+	float: left;
+	margin-top: 30px; 
+	font-size: 20px;
+}
+.fas{
+	display: inline;
+
+}
+h1{
+	display: inline;
+}
+
+nav{
+	overflow: auto;
+	margin-bottom: 20px;
+
+}
+
+nav ul{
+
+	float: right;
+}
+
+nav ul li{
+	display: inline-block;
+	list-style: none;
+	padding: 20px 35px;
+	box-sizing: border-box;
+
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: white;
+}
+
+.dropdown{
+	position: relative;
+}
+.submenu{
+	position: absolute;
+	top: 30px;
+	left: -40px;
+	display: none;
+}
+.submenu:hover .submenu{
+	display: block;
+}
+
+
+button{
+	border: 2px solid white;
+	padding: 5px 10px;
+}
+.btn-login{
+	color: blue;
+	background: white;
+}
+.btn-article{
+	color: white;
+	background: rgb(118, 121, 226);
+}
+section{
+	overflow: auto;
+	margin: 10px;
+}
+
+.lt-article{
+	padding-right: 10px;
+	width: 48%;
+	float: left;
+	text-align: left;
+}
+h2{
+	font-size: 50px;
+
+}
+p{
+	line-height: 25px;
+}
+.rt-article img{
+	width: 50%;
+}
