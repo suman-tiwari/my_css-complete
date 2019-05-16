@@ -1,0 +1,167 @@
+
+body{
+	font-family: "Arial",sans-serif;	
+	background-color: rgb(118, 121, 226);
+	width:80%;
+	margin:auto;
+}
+
+header{
+
+	color: white;
+
+}
+
+.logo{
+	float:left;
+	margin-top:15px;
+	border: 1px solid;
+}
+
+.cloud{
+	font-size:40px;
+}
+
+h1{
+	display: inline;
+	font-size:40px;
+}
+
+.desktop-nav{
+	overflow: auto;
+	margin-bottom: 20px;
+
+
+}
+.desktop-nav ul{
+	box-sizing: border-box;
+	float:right;
+}
+
+.desktop-nav ul li{
+	display: inline-block;
+	list-style: none;
+	padding: 10px 35px;
+	text-align: center;
+
+
+}
+
+.desktop-nav ul li:hover a{
+	color:black;
+}
+
+.desktop-nav ul li a{
+	text-decoration: none;
+	color: white;
+}
+.mobile-nav{
+	display:none;
+}
+
+.btn-login{
+	background: white;
+}
+.desktop-nav .btn-login a, .mobile-nav .btn-login a{
+	color: blue;
+}
+
+.buttons{
+	margin: 20px 0px;
+	display: inline-block;
+}
+
+.buttons a{
+	margin-right: 5px;
+	padding: 8px 20px;
+	border: 2px solid white;
+	color: white;
+	background: rgb(118, 121, 226);
+}
+
+.lt-article{
+	margin-top: 50px;
+	width: 48%;
+	text-align: center;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+.lt-article a{
+	text-decoration: none;
+}
+section{
+	overflow: auto;
+	margin-top: 100px;
+}
+
+h2{
+	font-size: 30px;
+	margin:0;
+}
+
+p{
+	line-height: 20px;
+}
+.rt-article{
+	padding-top: 10px;
+	float:right;
+	width:50%;
+}
+.rt-article img{
+	width: 100%;
+}
+
+@media screen and (max-width: 600px){
+
+.lt-article, .rt-article, .rt-article img{
+		display:block;
+		width:100%;
+		float:none;
+	}
+.desktop-nav{
+	display:none;
+}
+
+.mobile-nav{
+	display: block;
+}
+ .bars{
+	float: right;
+	margin-top: 25px;
+	font-size:20px;
+}
+.mobile-nav{
+	overflow: auto;
+}
+.mobile-nav ul{
+  position: absolute;
+  top: 27px;
+  right:10px;
+  z-index: 1;
+  display: none;
+  }
+
+
+.mobile-nav ul li{
+	display: block;
+	list-style: none;
+	padding: 10px 0px;
+	text-align: center;
+	border: 1px solid;
+}
+
+.mobile-nav ul li:hover a{
+	color:black;
+}
+
+.mobile-nav ul li a{
+	text-decoration: none;
+	color: white;
+}
+
+.mobile-nav:hover ul{
+  display: block;
+ }
+
+}
