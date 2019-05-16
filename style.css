@@ -2,92 +2,109 @@
 body{
 	font-family: "Arial",sans-serif;	
 	background-color: rgb(118, 121, 226);
-	position:relative;
+	width:80%;
+	margin:auto;
 }
 
 header{
 
 	color: white;
-	position:absolute;
-	left:10%;
-	right: 10%;
 
 }
 
 .logo{
-	float: left;
-	margin-top: 30px; 
-	font-size: 20px;
-	text-align: center;
+	float:left;
+	margin-top:15px;
+	border: 1px solid;
 }
-.fas{
-	display: inline;
 
+.cloud{
+	font-size:40px;
 }
+
 h1{
 	display: inline;
+	font-size:40px;
 }
 
-nav{
+.desktop-nav{
 	overflow: auto;
 	margin-bottom: 20px;
 
-}
 
-nav ul{
+}
+.desktop-nav ul{
 	box-sizing: border-box;
-	padding:0px;
 	float:right;
 }
 
-nav ul li{
+.desktop-nav ul li{
 	display: inline-block;
 	list-style: none;
-	padding: 20px 10px;
+	padding: 10px 35px;
 	text-align: center;
 
 
 }
-nav ul li:hover{
-	background-color: lightblue;
+
+.desktop-nav ul li:hover a{
+	color:black;
 }
-nav ul li a{
+
+.desktop-nav ul li a{
 	text-decoration: none;
 	color: white;
 }
-
-button{
-	border: 2px solid white;
-	padding: 5px 10px;
+.mobile-nav{
+	display:none;
 }
+
 .btn-login{
-	color: blue;
 	background: white;
 }
-.btn-article{
+.desktop-nav .btn-login a, .mobile-nav .btn-login a{
+	color: blue;
+}
+
+.buttons{
+	margin: 20px 0px;
+	display: inline-block;
+}
+
+.buttons a{
+	margin-right: 5px;
+	padding: 8px 20px;
+	border: 2px solid white;
 	color: white;
 	background: rgb(118, 121, 226);
 }
-section{
-	overflow: auto;
-	margin: 10px;
-}
 
 .lt-article{
-	padding: 10px;
+	margin-top: 50px;
 	width: 48%;
-	float: left;
-	text-align: left;
+	text-align: center;
+	display: inline-block;
 	box-sizing: border-box;
 }
-h2{
-	font-size: 50px;
 
+.lt-article a{
+	text-decoration: none;
 }
+section{
+	overflow: auto;
+	margin-top: 100px;
+}
+
+h2{
+	font-size: 30px;
+	margin:0;
+}
+
 p{
-	line-height: 25px;
+	line-height: 20px;
 }
 .rt-article{
+	padding-top: 10px;
 	float:right;
 	width:50%;
 }
@@ -96,25 +113,55 @@ p{
 }
 
 @media screen and (max-width: 600px){
-	
-nav, nav ul, nav ul li, .lt-article, .rt-article, .rt-article img, .logo{
+
+.lt-article, .rt-article, .rt-article img{
 		display:block;
 		width:100%;
 		float:none;
-
 	}
-nav ul li{
-	padding: 20px 0px;
+.desktop-nav{
+	display:none;
 }
-@media screen and (min-width:600px){
 
-.lt-article, .rt-article>img{
-		float:none;
-		display:block;
-		width:100%;
-		text-align: center;
-	}
+.mobile-nav{
+	display: block;
 }
-@media screen and (min-width: 768px){
+ .bars{
+	float: right;
+	margin-top: 25px;
+	font-size:20px;
+}
+.mobile-nav{
+	overflow: auto;
+}
+.mobile-nav ul{
+  position: absolute;
+  top: 27px;
+  right:10px;
+  z-index: 1;
+  display: none;
+  }
+
+
+.mobile-nav ul li{
+	display: block;
+	list-style: none;
+	padding: 10px 0px;
+	text-align: center;
+	border: 1px solid;
+}
+
+.mobile-nav ul li:hover a{
+	color:black;
+}
+
+.mobile-nav ul li a{
+	text-decoration: none;
+	color: white;
+}
+
+.mobile-nav:hover ul{
+  display: block;
+ }
 
 }
