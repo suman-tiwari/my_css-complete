@@ -1,7 +1,7 @@
 
 body{
-	font-family: "Arial",sans-serif;	
-	background-color: rgb(118, 121, 226);
+	font-family: "Cabin",sans-serif;	
+	background-color: #686ac8;
 	width:80%;
 	margin:auto;
 }
@@ -14,17 +14,16 @@ header{
 
 .logo{
 	float:left;
-	margin-top:15px;
-	border: 1px solid;
+	margin-top:17px;
 }
 
 .cloud{
-	font-size:40px;
+	font-size:26px;
 }
 
 h1{
 	display: inline;
-	font-size:40px;
+	font-size:26px;
 }
 
 .desktop-nav{
@@ -41,14 +40,17 @@ h1{
 .desktop-nav ul li{
 	display: inline-block;
 	list-style: none;
-	padding: 10px 35px;
+	padding: 10px 20px;
 	text-align: center;
 
 
 }
 
+.desktop-nav ul li:hover{
+	background-color:white;
+}
 .desktop-nav ul li:hover a{
-	color:black;
+	color:blue;
 }
 
 .desktop-nav ul li a{
@@ -58,11 +60,7 @@ h1{
 .mobile-nav{
 	display:none;
 }
-
-.btn-login{
-	background: white;
-}
-.desktop-nav .btn-login a, .mobile-nav .btn-login a{
+.mobile-nav{
 	color: blue;
 }
 
@@ -80,9 +78,9 @@ h1{
 }
 
 .lt-article{
-	margin-top: 50px;
+	margin-top: 80px;
 	width: 48%;
-	text-align: center;
+	text-align: left;
 	display: inline-block;
 	box-sizing: border-box;
 }
@@ -96,12 +94,12 @@ section{
 }
 
 h2{
-	font-size: 30px;
+	font-size: 42px;
 	margin:0;
 }
 
 p{
-	line-height: 20px;
+	line-height: 28px;
 }
 .rt-article{
 	padding-top: 10px;
@@ -109,7 +107,7 @@ p{
 	width:50%;
 }
 .rt-article img{
-	width: 100%;
+	width: 90%;
 }
 
 @media screen and (max-width: 600px){
@@ -130,6 +128,7 @@ p{
 	float: right;
 	margin-top: 25px;
 	font-size:20px;
+	color:white;
 }
 .mobile-nav{
 	overflow: auto;
@@ -148,11 +147,14 @@ p{
 	list-style: none;
 	padding: 10px 0px;
 	text-align: center;
-	border: 1px solid;
+	border: 1px solid white;
 }
 
 .mobile-nav ul li:hover a{
-	color:black;
+	color:blue;
+}
+.mobile-nav ul li:hover{
+	background-color:white;
 }
 
 .mobile-nav ul li a{
@@ -163,5 +165,17 @@ p{
 .mobile-nav:hover ul{
   display: block;
  }
+ .logo{
+	 margin-top: 23px;
+ }
+.cloud, h1{
+	font-size: 20px;
+}
+h2{
+	font-size: 35px;
+}
+.lt-article{
+	margin-top:0px;
+}
 
 }
